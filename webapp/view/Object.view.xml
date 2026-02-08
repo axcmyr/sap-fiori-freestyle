@@ -3,7 +3,8 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:semantic="sap.f.semantic"
-    xmlns:form="sap.ui.layout.form">
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
 
     <semantic:SemanticPage
         id="page"
@@ -16,48 +17,192 @@
         </semantic:titleHeading>
 
         <semantic:headerContent>
+            <ObjectAttribute title="{i18n>productCategory}">
+                <customContent>
+                    <HBox alignItems="Center">
+                        <core:Icon
+                            src="{
+                                path: 'Category',
+                                formatter: '.formatter.categoryIcon'
+                            }"
+                            color="#007bff"
+                            size="1.5rem"
+                            class="sapUiTinyMarginEnd"/>
+                        <Text text="{Category}"/>
+                    </HBox>
+                </customContent>
+            </ObjectAttribute>
             <ObjectNumber
                 number="{
                     path: 'Price',
                     formatter: '.formatter.numberUnit'
                 }"
                 unit="EUR"
+                emphasized="true"
             />
+            <ObjectStatus
+                text="{
+                    path: 'Available',
+                    formatter: '.formatter.availabilityText'
+                }"
+                state="{
+                    path: 'Available',
+                    formatter: '.formatter.availabilityState'
+                }"/>
         </semantic:headerContent>
 
         <semantic:content>
             <VBox>
-             <form:SimpleForm
-                title="{i18n>objectTitle}"
-                layout="ResponsiveGridLayout"
-                labelSpanXL="3"
-                labelSpanL="3"
-                labelSpanM="3"
-                labelSpanS="12"
-                adjustLabelSpan="false"
-                emptySpanXL="4"
-                emptySpanL="4"
-                emptySpanM="4"
-                emptySpanS="0"
-                columnsXL="1"
-                columnsL="1"
-                columnsM="1"
-                singleContainerFullSize="false">
-                <form:content>
-                    <Label text="{i18n>productName}"/>
-                    <Text text="{Name}"/>
-                    <Label text="{i18n>productDescription}"/>
-                    <Text text="{Description}"/>
-                    <Label text="{i18n>productRating}"/>
-                    <RatingIndicator value="{Rating}" editable="false"/>
-                </form:content>
-            </form:SimpleForm>
+                <!-- Basic Information Section -->
+                <form:SimpleForm
+                    title="{i18n>sectionBasicInfo}"
+                    layout="ResponsiveGridLayout"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false">
+                    <form:content>
+                        <Label text="{i18n>productName}"/>
+                        <Text text="{Name}"/>
+                        
+                        <Label text="{i18n>productDescription}"/>
+                        <Text text="{Description}"/>
+                        
+                        <Label text="{i18n>productRating}"/>
+                        <RatingIndicator 
+                            value="{Rating}" 
+                            maxValue="5"
+                            editable="false"
+                            iconSize="1.5rem"/>
+                        
+                        <Label text="{i18n>productPrice}"/>
+                        <ObjectNumber
+                            number="{
+                                path: 'Price',
+                                formatter: '.formatter.numberUnit'
+                            }"
+                            unit="EUR"
+                            emphasized="true"/>
+                        
+                        <Label text="{i18n>productWeight}"/>
+                        <ObjectNumber
+                            number="{
+                                path: 'Weight',
+                                formatter: '.formatter.numberUnit'
+                            }"
+                            unit="kg"/>
+                        
+                        <Label text="{i18n>productReleaseDate}"/>
+                        <Text text="{
+                            path: 'ReleaseDate',
+                            formatter: '.formatter.formatDate'
+                        }"/>
+                    </form:content>
+                </form:SimpleForm>
+
+                <!-- Inventory & Availability Section -->
+                <form:SimpleForm
+                    title="{i18n>sectionInventory}"
+                    layout="ResponsiveGridLayout"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false">
+                    <form:content>
+                        <Label text="{i18n>productStock}"/>
+                        <HBox alignItems="Center">
+                            <ObjectNumber
+                                number="{Stock}"
+                                unit="pieces"
+                                state="{
+                                    path: 'Stock',
+                                    formatter: '.formatter.stockState'
+                                }"
+                                class="sapUiTinyMarginEnd"/>
+                            <ObjectStatus
+                                text="{
+                                    path: 'Stock',
+                                    formatter: '.formatter.stockStatus'
+                                }"
+                                state="{
+                                    path: 'Stock',
+                                    formatter: '.formatter.stockState'
+                                }"/>
+                        </HBox>
+                        
+                        <Label text="{i18n>productAvailable}"/>
+                        <ObjectStatus
+                            text="{
+                                path: 'Available',
+                                formatter: '.formatter.availabilityText'
+                            }"
+                            state="{
+                                path: 'Available',
+                                formatter: '.formatter.availabilityState'
+                            }"
+                            icon="{= ${Available} ? 'sap-icon://accept' : 'sap-icon://decline' }"/>
+                    </form:content>
+                </form:SimpleForm>
+
+                <!-- Supplier Information Section -->
+                <form:SimpleForm
+                    title="{i18n>sectionSupplier}"
+                    layout="ResponsiveGridLayout"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false">
+                    <form:content>
+                        <Label text="{i18n>productSupplier}"/>
+                        <Text text="{Supplier}"/>
+                        
+                        <Label text="{i18n>productCategory}"/>
+                        <HBox alignItems="Center">
+                            <core:Icon
+                                src="{
+                                    path: 'Category',
+                                    formatter: '.formatter.categoryIcon'
+                                }"
+                                color="#007bff"
+                                size="1.5rem"
+                                class="sapUiTinyMarginEnd"/>
+                            <Text text="{Category}"/>
+                        </HBox>
+                    </form:content>
+                </form:SimpleForm>
             </VBox>
         </semantic:content>
 
         <semantic:footerCustomActions>
             <Button text="{i18n>delete}" press=".onDelete" type="Reject"/>
-            <Button text="{i18n>create}" press=".onEdit" type="Emphasized"/>
+            <Button text="{i18n>edit}" press=".onEdit" type="Emphasized"/>
         </semantic:footerCustomActions>
 
     </semantic:SemanticPage>

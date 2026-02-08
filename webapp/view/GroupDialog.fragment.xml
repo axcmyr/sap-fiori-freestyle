@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <ViewSettingsDialog
+        id="groupDialog"
+        confirm=".onGroupDialogConfirm"
+        title="{i18n>groupBy}">
+        <groupItems>
+            <ViewSettingsItem
+                key="Category"
+                text="{i18n>groupCategory}"/>
+            <ViewSettingsItem
+                key="Supplier"
+                text="{i18n>groupSupplier}"/>
+            <ViewSettingsItem
+                key="StockStatus"
+                text="{i18n>groupStockStatus}"/>
+        </groupItems>
+    </ViewSettingsDialog>
+</core:FragmentDefinition>

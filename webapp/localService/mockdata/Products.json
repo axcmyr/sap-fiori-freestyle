@@ -6,7 +6,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "3.50"
+        "Price": "3.50",
+        "Category": "Dairy",
+        "Stock": 45,
+        "Supplier": "Fresh Farms Co.",
+        "Available": true,
+        "Weight": "1.00"
     },
     {
         "ID": 2,
@@ -15,7 +20,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 3,
-        "Price": "2.50"
+        "Price": "2.50",
+        "Category": "Grains",
+        "Stock": 30,
+        "Supplier": "Baker's Delight",
+        "Available": true,
+        "Weight": "0.50"
     },
     {
         "ID": 3,
@@ -24,7 +34,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "4.50"
+        "Price": "4.50",
+        "Category": "Dairy",
+        "Stock": 25,
+        "Supplier": "Fresh Farms Co.",
+        "Available": true,
+        "Weight": "0.25"
     },
     {
         "ID": 4,
@@ -33,7 +48,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "6.99"
+        "Price": "6.99",
+        "Category": "Dairy",
+        "Stock": 18,
+        "Supplier": "Artisan Cheese Ltd.",
+        "Available": true,
+        "Weight": "0.30"
     },
     {
         "ID": 5,
@@ -42,7 +62,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "4.20"
+        "Price": "4.20",
+        "Category": "Dairy",
+        "Stock": 60,
+        "Supplier": "Happy Hens Farm",
+        "Available": true,
+        "Weight": "0.72"
     },
     {
         "ID": 6,
@@ -51,7 +76,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "2.99"
+        "Price": "2.99",
+        "Category": "Dairy",
+        "Stock": 8,
+        "Supplier": "Fresh Farms Co.",
+        "Available": true,
+        "Weight": "0.50"
     },
     {
         "ID": 7,
@@ -60,7 +90,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "12.50"
+        "Price": "12.50",
+        "Category": "Beverages",
+        "Stock": 22,
+        "Supplier": "Mountain Coffee Roasters",
+        "Available": true,
+        "Weight": "0.50"
     },
     {
         "ID": 8,
@@ -69,7 +104,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "5.99"
+        "Price": "5.99",
+        "Category": "Beverages",
+        "Stock": 35,
+        "Supplier": "Tea Masters Inc.",
+        "Available": true,
+        "Weight": "0.15"
     },
     {
         "ID": 9,
@@ -78,7 +118,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "4.75"
+        "Price": "4.75",
+        "Category": "Beverages",
+        "Stock": 0,
+        "Supplier": "Citrus Grove Co.",
+        "Available": false,
+        "Weight": "1.00"
     },
     {
         "ID": 10,
@@ -87,7 +132,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 3,
-        "Price": "1.99"
+        "Price": "1.99",
+        "Category": "Grains",
+        "Stock": 50,
+        "Supplier": "Pasta Bella",
+        "Available": true,
+        "Weight": "0.50"
     },
     {
         "ID": 11,
@@ -96,7 +146,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "3.25"
+        "Price": "3.25",
+        "Category": "Grains",
+        "Stock": 40,
+        "Supplier": "Global Grains Ltd.",
+        "Available": true,
+        "Weight": "1.00"
     },
     {
         "ID": 12,
@@ -105,7 +160,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "2.80"
+        "Price": "2.80",
+        "Category": "Condiments",
+        "Stock": 28,
+        "Supplier": "Organic Harvest",
+        "Available": true,
+        "Weight": "0.40"
     },
     {
         "ID": 13,
@@ -114,7 +174,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "8.99"
+        "Price": "8.99",
+        "Category": "Condiments",
+        "Stock": 15,
+        "Supplier": "Mediterranean Imports",
+        "Available": true,
+        "Weight": "0.75"
     },
     {
         "ID": 14,
@@ -123,7 +188,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "7.50"
+        "Price": "7.50",
+        "Category": "Proteins",
+        "Stock": 12,
+        "Supplier": "Quality Meats Co.",
+        "Available": true,
+        "Weight": "0.50"
     },
     {
         "ID": 15,
@@ -132,7 +202,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "15.99"
+        "Price": "15.99",
+        "Category": "Proteins",
+        "Stock": 5,
+        "Supplier": "Ocean Fresh Seafood",
+        "Available": true,
+        "Weight": "0.40"
     },
     {
         "ID": 16,
@@ -141,7 +216,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "3.99"
+        "Price": "3.99",
+        "Category": "Produce",
+        "Stock": 55,
+        "Supplier": "Orchard Valley",
+        "Available": true,
+        "Weight": "1.00"
     },
     {
         "ID": 17,
@@ -150,7 +230,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "2.25"
+        "Price": "2.25",
+        "Category": "Produce",
+        "Stock": 70,
+        "Supplier": "Tropical Fruits Inc.",
+        "Available": true,
+        "Weight": "1.20"
     },
     {
         "ID": 18,
@@ -159,7 +244,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 3,
-        "Price": "1.75"
+        "Price": "1.75",
+        "Category": "Produce",
+        "Stock": 3,
+        "Supplier": "Organic Harvest",
+        "Available": true,
+        "Weight": "0.50"
     },
     {
         "ID": 19,
@@ -168,7 +258,12 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 3,
-        "Price": "2.99"
+        "Price": "2.99",
+        "Category": "Produce",
+        "Stock": 48,
+        "Supplier": "Farm Direct",
+        "Available": true,
+        "Weight": "2.00"
     },
     {
         "ID": 20,
@@ -177,6 +272,11 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "2.49"
+        "Price": "2.49",
+        "Category": "Snacks",
+        "Stock": 0,
+        "Supplier": "Sweet Treats Ltd.",
+        "Available": false,
+        "Weight": "0.10"
     }
 ]

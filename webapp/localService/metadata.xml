@@ -7,12 +7,17 @@
                     <PropertyRef Name="ID"/>
                 </Key>
                 <Property Name="ID" Type="Edm.Int32" Nullable="false"/>
-                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="20"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="50"/>
                 <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="200"/>
                 <Property Name="ReleaseDate" Type="Edm.DateTime" Nullable="false"/>
                 <Property Name="DiscontinuedDate" Type="Edm.DateTime"/>
                 <Property Name="Rating" Type="Edm.Int16" Nullable="false"/>
                 <Property Name="Price" Type="Edm.Decimal" Nullable="false" Precision="12" Scale="2"/>
+                <Property Name="Category" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="Stock" Type="Edm.Int32" Nullable="false"/>
+                <Property Name="Supplier" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Available" Type="Edm.Boolean" Nullable="false"/>
+                <Property Name="Weight" Type="Edm.Decimal" Precision="10" Scale="2"/>
             </EntityType>
             <EntityContainer Name="ODataDemo_Entities" m:IsDefaultEntityContainer="true">
                 <EntitySet Name="Products" EntityType="ODataDemo.Product"/>
