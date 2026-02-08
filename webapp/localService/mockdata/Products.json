@@ -6,7 +6,7 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 4,
-        "Price": "3.5"
+        "Price": "3.50"
     },
     {
         "ID": 2,
@@ -15,7 +15,7 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 3,
-        "Price": "2.5"
+        "Price": "2.50"
     },
     {
         "ID": 3,
@@ -24,6 +24,159 @@
         "ReleaseDate": "/Date(1679097600000)/",
         "DiscontinuedDate": null,
         "Rating": 5,
-        "Price": "4.5"
+        "Price": "4.50"
+    },
+    {
+        "ID": 4,
+        "Name": "Cheese",
+        "Description": "Aged cheddar cheese",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 5,
+        "Price": "6.99"
+    },
+    {
+        "ID": 5,
+        "Name": "Eggs",
+        "Description": "Free range eggs (12 pack)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "4.20"
+    },
+    {
+        "ID": 6,
+        "Name": "Yogurt",
+        "Description": "Greek yogurt natural",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "2.99"
+    },
+    {
+        "ID": 7,
+        "Name": "Coffee",
+        "Description": "Premium arabica coffee beans",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 5,
+        "Price": "12.50"
+    },
+    {
+        "ID": 8,
+        "Name": "Tea",
+        "Description": "Earl Grey tea bags (50 pack)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "5.99"
+    },
+    {
+        "ID": 9,
+        "Name": "Orange Juice",
+        "Description": "Freshly squeezed orange juice",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "4.75"
+    },
+    {
+        "ID": 10,
+        "Name": "Pasta",
+        "Description": "Italian spaghetti pasta",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 3,
+        "Price": "1.99"
+    },
+    {
+        "ID": 11,
+        "Name": "Rice",
+        "Description": "Basmati rice (1kg)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "3.25"
+    },
+    {
+        "ID": 12,
+        "Name": "Tomato Sauce",
+        "Description": "Organic tomato pasta sauce",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "2.80"
+    },
+    {
+        "ID": 13,
+        "Name": "Olive Oil",
+        "Description": "Extra virgin olive oil",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 5,
+        "Price": "8.99"
+    },
+    {
+        "ID": 14,
+        "Name": "Chicken Breast",
+        "Description": "Fresh chicken breast (500g)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "7.50"
+    },
+    {
+        "ID": 15,
+        "Name": "Salmon",
+        "Description": "Fresh Atlantic salmon fillet",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 5,
+        "Price": "15.99"
+    },
+    {
+        "ID": 16,
+        "Name": "Apples",
+        "Description": "Red delicious apples (1kg)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "3.99"
+    },
+    {
+        "ID": 17,
+        "Name": "Bananas",
+        "Description": "Fresh bananas (bunch)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "2.25"
+    },
+    {
+        "ID": 18,
+        "Name": "Carrots",
+        "Description": "Organic carrots (500g)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 3,
+        "Price": "1.75"
+    },
+    {
+        "ID": 19,
+        "Name": "Potatoes",
+        "Description": "White potatoes (2kg)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 3,
+        "Price": "2.99"
+    },
+    {
+        "ID": 20,
+        "Name": "Chocolate",
+        "Description": "Dark chocolate bar (100g)",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 5,
+        "Price": "2.49"
     }
 ]

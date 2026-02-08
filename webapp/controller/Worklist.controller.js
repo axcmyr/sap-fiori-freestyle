@@ -87,6 +87,8 @@ sap.ui.define([
         },
 
 
+
+
         onSearch: function (oEvent) {
             if (oEvent.getParameters().refreshButtonPressed) {
                 // Search field's 'refresh' button has been pressed.
@@ -97,7 +99,16 @@ sap.ui.define([
                 var sQuery = oEvent.getParameter("query");
 
                 if (sQuery && sQuery.length > 0) {
-                    aTableSearchState = [new Filter("Name", FilterOperator.Contains, sQuery)];
+                    // Search in both Name and Description fields
+                    aTableSearchState = [
+                        new Filter({
+                            filters: [
+                                new Filter("Name", FilterOperator.Contains, sQuery),
+                                new Filter("Description", FilterOperator.Contains, sQuery)
+                            ],
+                            and: false // OR logic
+                        })
+                    ];
                 }
                 this._applySearch(aTableSearchState);
             }
