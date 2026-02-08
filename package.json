@@ -1,0 +1,17 @@
+{
+  "name": "sap-fiori-freestyle",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "ui5 serve --config=ui5.yaml  --open index.html",
+    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.0.0",
+    "@sap/ui5-builder-webide-extension": "^1.0.0"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ui5-builder-webide-extension"
+    ]
+  }
+}

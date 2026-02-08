@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+	<Dialog
+		id="createDialog"
+		title="{i18n>create}">
+		<content>
+            <form:SimpleForm
+                editable="true"
+                layout="ResponsiveGridLayout">
+                <form:content>
+                    <Label text="{i18n>productName}" required="true"/>
+                    <Input value="{Name}"/>
+                    <Label text="{i18n>productDescription}"/>
+                    <Input value="{Description}"/>
+                    <Label text="{i18n>productPrice}"/>
+                    <Input value="{Price}" type="Number"/>
+                    <Label text="{i18n>productRating}"/>
+                    <RatingIndicator value="{Rating}" editable="true" maxValue="5"/>
+                </form:content>
+            </form:SimpleForm>
+		</content>
+		<beginButton>
+			<Button text="{i18n>save}" press=".onSaveCreate" type="Emphasized"/>
+		</beginButton>
+		<endButton>
+			<Button text="{i18n>cancel}" press=".onCancelCreate"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

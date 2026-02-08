@@ -1,0 +1,65 @@
+<mvc:View
+    controllerName="sap.fiori.freestyle.controller.Object"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:form="sap.ui.layout.form">
+
+    <semantic:SemanticPage
+        id="page"
+        headerPinnable="false"
+        toggleHeaderOnTitleClick="false"
+        showFooter="true">
+
+        <semantic:titleHeading>
+            <Title text="{Name}" level="H2"/>
+        </semantic:titleHeading>
+
+        <semantic:headerContent>
+            <ObjectNumber
+                number="{
+                    path: 'Price',
+                    formatter: '.formatter.numberUnit'
+                }"
+                unit="EUR"
+            />
+        </semantic:headerContent>
+
+        <semantic:content>
+            <VBox>
+             <form:SimpleForm
+                title="{i18n>objectTitle}"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="4"
+                emptySpanL="4"
+                emptySpanM="4"
+                emptySpanS="0"
+                columnsXL="1"
+                columnsL="1"
+                columnsM="1"
+                singleContainerFullSize="false">
+                <form:content>
+                    <Label text="{i18n>productName}"/>
+                    <Text text="{Name}"/>
+                    <Label text="{i18n>productDescription}"/>
+                    <Text text="{Description}"/>
+                    <Label text="{i18n>productRating}"/>
+                    <RatingIndicator value="{Rating}" editable="false"/>
+                </form:content>
+            </form:SimpleForm>
+            </VBox>
+        </semantic:content>
+
+        <semantic:footerCustomActions>
+            <Button text="{i18n>delete}" press=".onDelete" type="Reject"/>
+            <Button text="{i18n>create}" press=".onEdit" type="Emphasized"/>
+        </semantic:footerCustomActions>
+
+    </semantic:SemanticPage>
+
+</mvc:View>

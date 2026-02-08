@@ -1,0 +1,29 @@
+[
+    {
+        "ID": 1,
+        "Name": "Milk",
+        "Description": "Low fat milk",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 4,
+        "Price": "3.5"
+    },
+    {
+        "ID": 2,
+        "Name": "Bread",
+        "Description": "Whole grain bread",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 3,
+        "Price": "2.5"
+    },
+    {
+        "ID": 3,
+        "Name": "Butter",
+        "Description": "Salted butter",
+        "ReleaseDate": "/Date(1679097600000)/",
+        "DiscontinuedDate": null,
+        "Rating": 5,
+        "Price": "4.5"
+    }
+]
